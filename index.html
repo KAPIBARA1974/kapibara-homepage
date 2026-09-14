@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kapibara.hu - Hamarosan érkezik</title>
     <style>
-        body {
+       body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #3e2723;
             margin: 0;
@@ -16,13 +16,13 @@
             height: 100vh;
             text-align: center;
             
-            
-            background-color: #f4ede4; 
+            /* Kisebb, középre igazított háttér beállításai */
+            background-color: #f4ede4; /* A rajzhoz illő homokbarna háttérszín a szélekre */
             background-image: url('image_UdQKE-.png'); 
-            background-repeat: no-repeat;
-            background-position: center center;
+            background-repeat: no-repeat; /* Nem engedjük, hogy sokszorozódjon */
+            background-position: center center; /* Pontosan középen tartja a képet */
             background-attachment: fixed; 
-            background-size: cover; 
+            background-size: 600px auto; /* Fix 600 pixel szélesre veszi a képet, így nem lesz óriási */
         }
         .container {
             
