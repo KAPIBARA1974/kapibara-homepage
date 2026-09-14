@@ -1,76 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kapibara.hu - Hamarosan érkezik</title>
-    <style>
-       body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #3e2723;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            
-            
-            background-color: #f4ede4; 
-            background-image: url('image_UdQKE-.png'); 
-            background-repeat: no-repeat; 
-            background-position: center center; 
-            background-attachment: fixed; 
-            background-size: 600px auto; 
-        }
-        .container {
-            
-            background-color: rgba(255, 255, 255, 0.9); 
-            backdrop-filter: blur(5px); 
-            padding: 3rem;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-            max-width: 500px;
-            border: 2px solid rgba(215, 204, 200, 0.7);
-            margin: 20px;
-        }
-        h1 {
-            color: #5d4037;
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            color: #6d4c41;
-        }
-        .badge {
-            background-color: #8d6e63;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 50px;
-            font-size: 0.9rem;
-            display: inline-block;
-            margin-bottom: 20px;
-        }
-        .footer {
-            margin-top: 30px;
-            font-size: 0.9rem;
-            color: #a1887f;
-        }
-    </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kapibara.hu — Lassú élet, jobb élet</title>
+<meta name="description" content="Lassíts egy kicsit. Kapibara.hu — életmód, apró kihívások és gondolatok a nyugodtabb mindennapokhoz.">
+<meta name="theme-color" content="#f3eee2">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<header class="header">
+<a class="logo" href="#top">🦫 <b>kapibara</b><small>.hu</small></a>
+<button class="hamb" aria-label="Menü">☰</button>
+<nav class="nav"><a href="#lassits">Lassíts!</a><a href="#temak">Témák</a><a href="#cikkek">Cikkek</a><a href="#kihivas">Kihívás</a><a href="#kapibara">A kapibara</a></nav>
+</header>
 
-    <div class="container">
-        <div class="badge">kapibara.hu</div>
-        <h1>Üdvözöllek a Kapibara világában!</h1>
-        
-        <p>A weboldal jelenleg fejlesztés alatt áll, de hamarosan megnyitja kapuit. Készülj fel a világ legnyugodtabb tartalmára!</p>
-        <div class="footer">&copy; 2026 kapibara.hu | Minden jog fenntartva.</div>
-    </div>
+<main id="top">
+<section class="hero">
+<div><p class="kicker">életmód a rohanás ellen</p><h1>Lassú élet,<br><i>jobb élet.</i></h1><p class="lead">Nem kell mindig rohannod. Nem kell mindig teljesítened. Néha elég, ha megállsz.</p>
+<div class="buttons"><a class="btn dark" href="#kihivas">Kérem a mai kihívást</a><a class="btn light" href="#lassits">Miért lassítsak?</a></div></div>
+<div class="scene"><div class="sun"></div><div class="water"></div><div class="capy"><b class="ear a"></b><b class="ear b"></b><b class="eye a"></b><b class="eye b"></b><b class="snout"></b><b class="smile"></b><b class="leg a"></b><b class="leg b"></b></div><div class="speech">Nyugi.<br><strong>Ráérsz.</strong></div></div>
+</section>
 
-</body>
-</html>
+<section id="lassits" class="split"><div class="label">01 / MIÉRT?</div><div><h2>Nem több idő kell.<br>Másfajta idő.</h2><p>A modern élet tele van értesítésekkel, határidőkkel, zajjal és állandó készenléttel. A kapibara.hu nem egy újabb teljesítményprojekt.</p><p><strong>Apró változtatásokat keresünk, amelyek visszaadják a figyelmet annak, ami tényleg fontos.</strong></p></div></section>
 
+<section class="wisdom"><p class="kicker">02 / KAPIBARA-BÖLCSESSÉGEK</p><h2>A kapibara szerint...</h2><div class="wisdom-grid"><div>Nem minden sürgős.</div><div>A pihenés nem jutalom.</div><div>A semmittevés is program.</div><div>Nem kell minden percet hasznosan tölteni.</div></div></section>
+
+<section id="kihivas" class="challenge"><div class="challenge-inner"><div class="big-capy">🦫</div><p class="kicker">MAI KAPIBARA-KIHÍVÁS</p><h2 id="challenge-title"></h2><p id="challenge-text"></p><div class="challenge-actions"><button id="done" class="btn clay">Teljesítettem ✓</button><button id="next" class="btn outline">Másikat kérek</button></div><div class="progress"><span id="progress"></span></div><small id="status"></small></div></section>
+
+<section id="temak" class="section"><p class="kicker">03 / TÉMÁK</p><h2>Hol szeretnél lassítani?</h2><div class="cards">
+<article><span>🧠</span><h3>Lélek</h3><p>Stressz, túlterheltség, pihenés, figyelem és jelenlét.</p><a href="#cikkek" data-filter="Lélek">Felfedezem →</a></article>
+<article><span>🏃</span><h3>Test</h3><p>Alvás, mozgás, táplálkozás és regeneráció.</p><a href="#cikkek" data-filter="Test">Felfedezem →</a></article>
+<article><span>📱</span><h3>Digitális lassítás</h3><p>Telefon, képernyőidő, közösségi média és digitális detox.</p><a href="#cikkek" data-filter="Digitális">Felfedezem →</a></article>
+<article><span>🏡</span><h3>Egyszerűbb élet</h3><p>Kevesebb tárgy, zaj és impulzus. Több hely annak, ami fontos.</p><a href="#cikkek" data-filter="Egyszerűbb">Felfedezem →</a></article>
+<article><span>❤️</span><h3>Kapcsolódás</h3><p>Család, barátok, párkapcsolat és valódi beszélgetések.</p><a href="#cikkek" data-filter="Kapcsolódás">Felfedezem →</a></article>
+<article><span>🌿</span><h3>Természet</h3><p>Séta, erdő, vízpart, napfény és csend.</p><a href="#cikkek" data-filter="Természet">Felfedezem →</a></article>
+</div></section>
+
+<section id="cikkek" class="section paper"><div class="article-head"><div><p class="kicker">04 / CIKKEK</p><h2>Olvasnivaló,<br>nem görgetnivaló.</h2></div><input id="search" type="search" placeholder="Keresés a cikkek között…" aria-label="Cikkek keresése"></div>
+<div class="filters"><button class="filter active" data-cat="Mind">Mind</button><button class="filter" data-cat="Lélek">Lélek</button><button class="filter" data-cat="Test">Test</button><button class="filter" data-cat="Digitális">Digitális</button><button class="filter" data-cat="Egyszerűbb">Egyszerűbb</button><button class="filter" data-cat="Természet">Természet</button></div>
+<div id="articles" class="articles"></div><p id="empty" class="empty">Nincs találat. A kapibara szerint ez is rendben van.</p></section>
+
+<section class="newsletter"><div><p class="kicker">05 / KAPIBARA-LEVÉL</p><h2>Hetente egy kis lassítás.</h2><p>Rövid gondolat, egy apró kihívás és egy dolog, amit ezen a héten elengedhetsz.</p></div><form id="signup"><input required type="email" placeholder="email címed" aria-label="Email cím"><button class="btn clay">Feliratkozom</button></form></section>
+
+<section class="manifesto"><p class="kicker">06 / A FILOZÓFIA</p><h2>A lassú élet nem azt jelenti, hogy semmit sem csinálsz.</h2><p>Hanem azt, hogy <strong>nem mindent csinálsz egyszerre.</strong> Nem adod fel a céljaidat, csak nem áldozod fel értük az egész életed.</p><div class="quote">„Lassítani nem visszalépés. Lassítani annyi, mint újra észrevenni az életet.”</div></section>
+
+<section id="kapibara" class="split about"><div class="about-art">🦫</div><div><p class="kicker">07 / A KAPIBARA</p><h2>Aki nem siet.</h2><p>A kapibara nem akar mindenáron bizonyítani. Nem akar gyorsabb lenni. Nem akar minden pillanatból teljesítményt csinálni.</p><p><strong>Egyszerűen jól van a saját tempójában.</strong></p><div class="note">🦫 Kapibara-megjegyzés: Nem kell mindent ma.</div></div></section>
+<section class="final"><div>🦫</div><h2>Egy kis lassítás mára?</h2><p>Tedd le a telefont. Nézz ki az ablakon. Vegyél egy nagy levegőt.</p><a class="btn dark" href="#kihivas">Kezdem kicsiben</a></section>
+</main>
+
+<div id="toast" class="toast"></div>
+<div id="modal" class="modal"><div class="modal-box"><button id="close" class="close">×</button><span id="mcat" class="tag"></span><h2 id="mtitle"></h2><p id="mbody"></p></div></div>
+<footer><strong>🦫 kapibara.hu</strong><span>Lassú élet, jobb élet.</span><small>© <span id="year"></span> Kapibara.hu</small></footer>
+<script src="js/app.js"></script>
+</body></html>
