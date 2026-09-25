@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 170" role="img" aria-labelledby="title desc">
+<title id="title">Kapibara</title>
+<desc id="desc">Barátságos, kerek testű kapibara illusztráció</desc>
+<g stroke="#5f4637" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+  <path fill="#b9784f" d="M38 108c-5-30 7-58 34-71 26-13 68-10 94 8 23 16 32 43 23 64-9 23-33 35-68 37-40 2-78-9-83-38z"/>
+  <path fill="#a96747" d="M25 115c-3-12 5-24 18-29l25-9c13-5 25 3 25 15v18c0 12-12 22-27 22H43c-10 0-16-7-18-17z"/>
+  <ellipse fill="#9c6042" cx="60" cy="76" rx="13" ry="10"/>
+  <circle fill="#2c2925" stroke="none" cx="67" cy="73" r="4.8"/>
+  <circle fill="#2c2925" stroke="none" cx="45" cy="91" r="4.5"/>
+  <path fill="#815039" d="M35 126c8 3 17 4 26 3"/>
+  <path fill="none" d="M42 101c4 5 9 7 15 7"/>
+  <path fill="none" d="M43 99l-15-4M44 104l-15 3"/>
+  <path fill="#a96747" d="M106 51c-4-13 2-23 14-25 10-1 17 5 17 15 0 9-7 15-18 16z"/>
+  <path fill="#a96747" d="M154 56c-3-12 3-22 14-23 11-1 18 6 17 16-1 9-8 14-18 15z"/>
+  <path fill="#7f4e39" d="M38 139c8 8 17 10 27 9M150 141c9 7 19 8 29 3"/>
+</g>
+</svg>
